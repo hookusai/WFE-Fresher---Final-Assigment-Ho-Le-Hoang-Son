@@ -1,0 +1,777 @@
+/*
+ *Concept Template 
+ *
+ *http://www.templatemo.com/tm-397-concept */
+.site-header .main-navigation ul, .services #icons ul, .about #icons-about ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.templatemo_clear {
+  clear: both; }
+
+.img_left {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 15px; }
+
+.img_right {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 15px; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+body {
+  background-color: #eeeeee;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.75em; }
+
+a {
+  color: #b10021; }
+  a:active, a:visited, a:link {
+    outline: 0;
+    border: 0;
+    text-decoration: none; }
+  a:hover {
+    text-decoration: none;
+    color: #2a2a2a; }
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #cfcfcf !important; }
+
+.content {
+  display: none;
+  margin-top: 60px; }
+
+.inner-content, .widget-content, .about-us-content {
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #cfcfcf; }
+
+.page-title {
+  color: #b10021;
+  font-size: 24px;
+  font-weight: 600; }
+
+.homepage, .products {
+  display: block; }
+
+.panel {
+  background-color: transparent;
+  box-shadow: none; }
+
+.site-header .main-navigation {
+  display: block;
+  background-color: #b10021;
+  text-align: center;
+  padding: 15px 0; }
+  .site-header .main-navigation ul li {
+    display: inline-block;
+    margin-right: 60px; }
+    .site-header .main-navigation ul li:last-child {
+      margin-right: 0px !important; }
+    .site-header .main-navigation ul li a {
+      padding: 10px 20px;
+      display: inline-block;
+      color: white;
+      font-size: 18px; }
+      .site-header .main-navigation ul li a.active {
+        background-color: #eeeeee;
+        color: #2a2a2a;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px; }
+.site-header .templatemo_logo {
+  margin-top: 60px;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 700; }
+
+a.menu-toggle-btn {
+  padding: 15px 0;
+  display: block;
+  color: white;
+  font-size: 28px; }
+
+.responsive-menu {
+  display: none; }
+
+.responsive_menu {
+  display: none;
+  background-color: #2a2a2a; }
+  .responsive_menu ul li {
+    display: block !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #444444; }
+    .responsive_menu ul li a {
+      padding: 20px 0 !important;
+      display: block !important; }
+
+/*------------------------------------------------------
+ *  Gallery Styles 
+ *-------------------------------------------------------- */
+.gallery-item {
+  background-color: white;
+  padding: 10px;
+  -webkit-box-shadow: inset 0 0 1px #666;
+  -moz-box-shadow: inset 0 0 1px #666;
+  box-shadow: inset 0 0 1px #666;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden; }
+  .gallery-item .content-gallery {
+    text-align: center; }
+    .gallery-item .content-gallery h3 {
+      color: #b10021;
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 5px;
+      padding-bottom: 5px;
+      display: inline-block; }
+  .gallery-item img {
+    width: 100%; }
+  .gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    background-color: rgba(177, 0, 33, 0.9);
+    display: block;
+    -webkit-transition: all 50ms ease-in-out;
+    -moz-transition: all 50ms ease-in-out;
+    -ms-transition: all 50ms ease-in-out;
+    -o-transition: all 50ms ease-in-out;
+    transition: all 50ms ease-in-out; }
+    .gallery-item .overlay a {
+      color: #2a2a2a;
+      width: 32px;
+      height: 32px;
+      background-color: white;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      border-radius: 3px;
+      text-align: center;
+      line-height: 32px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -16px;
+      margin-left: -16px; }
+
+/*------------------------------------------------------
+ *  Products Styles 
+ *-------------------------------------------------------- */
+.product-item {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  margin-bottom: 30px;
+  overflow: hidden; }
+  .product-item img {
+    width: 100%; }
+  .product-item a.product-title {
+    margin: 15px 0;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px; }
+
+/*------------------------------------------------------
+ *  Services Styles 
+ *-------------------------------------------------------- */
+.services p {
+  margin-top: 30px; }
+.services ul {
+  margin-top: 30px; }
+  .services ul li {
+    margin-left: 20px; }
+    .services ul li:before {
+      content: "+";
+      margin-right: 10px;
+      color: #919191; }
+.services #icons {
+  overflow: hidden; }
+  .services #icons ul li {
+    margin: 0; }
+    .services #icons ul li:before {
+      content: "";
+      margin: 0; }
+  .services #icons .icon-item {
+    display: block;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    background-color: #999999;
+    cursor: pointer;
+    text-align: center; }
+    .services #icons .icon-item i {
+      font-size: 24px;
+      color: white; }
+    .services #icons .icon-item span {
+      margin-top: 25px;
+      display: block;
+      font-size: 18px;
+      color: white;
+      font-weight: 600; }
+  .services #icons .active {
+    background-color: #b10021; }
+
+/*------------------------------------------------------
+ *  About Styles 
+ *-------------------------------------------------------- */
+.about p {
+  margin-top: 30px; }
+.about ul {
+  margin-top: 30px; }
+  .about ul li {
+    margin-left: 20px; }
+    .about ul li:before {
+      content: "+";
+      margin-right: 10px;
+      color: #919191; }
+.about #icons-about ul li {
+  margin: 0; }
+  .about #icons-about ul li:before {
+    content: "";
+    margin: 0; }
+.about #icons-about .icon-item {
+  display: block;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  background-color: #999999;
+  cursor: pointer;
+  text-align: center; }
+  .about #icons-about .icon-item i {
+    font-size: 24px;
+    color: white; }
+  .about #icons-about .icon-item span {
+    margin-top: 25px;
+    display: block;
+    font-size: 18px;
+    color: white;
+    font-weight: 600; }
+.about #icons-about .active {
+  background-color: #b10021; }
+
+/*------------------------------------------------------
+ *  Contact Styles 
+ *-------------------------------------------------------- */
+.contact .widget-content {
+  margin-bottom: 30px; }
+
+.contact-form {
+  margin-top: 30px; }
+  .contact-form input, .contact-form textarea {
+    border: 0;
+    outline: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%; }
+  .contact-form input.button {
+    width: auto;
+    border: 0 !important;
+    background-color: #b10021;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-bottom: 0; }
+  .contact-form textarea {
+    min-height: 140px; }
+
+.contact-information {
+  margin-top: 30px; }
+
+#templatemo_map {
+  width: 100%;
+  height: 330px;
+  margin-top: 30px;
+  margin-bottom: 10px; }
+
+#templatemo_footer {
+  margin-top: 60px;
+  border-top: 3px solid #b10021;
+  padding: 20px 0;
+  position: relative; }
+
+/*------------------------------------------------------
+ *  RESPONSIVE STYLING 
+ *-------------------------------------------------------- */
+@media only screen and (max-width: 1000px) {
+  .site-header .main-navigation {
+    padding: 0; }
+    .site-header .main-navigation .container {
+      width: 100%; }
+
+  .responsive-menu {
+    display: block; }
+
+  .main_menu, .services #icons .icon-item span, .about #icons-about .icon-item span {
+    display: none; } }
+@media only screen and (max-width: 760px) {
+  .services #icons, .about #icons-about {
+    margin-top: 50px; }
+    .services #icons .icon-item span, .about #icons-about .icon-item span {
+      display: inline-block;
+      margin: 0 0 0 20px; } }
+#lightbox {
+  cursor: pointer;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  /* IE Fallback (Solid Colour) */
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIElEQVQ4T2NkYGDYDMRkA8ZRAxhGw4BhNAyA+WAYpAMAIFgLQfO9BoEAAAAASUVORK5CYII=);
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-filter: none !important; }
+  #lightbox img {
+    display: block;
+    position: absolute;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px #000;
+    border-radius: 1px; }
+
+body.blurred > * {
+  -webkit-filter: blur(2px);
+  -webkit-transform: translate3d(0, 0, 0); }
+
+.lightbox-loading {
+  background: url(../images/loading.gif) center center no-repeat;
+  width: 31px;
+  height: 31px;
+  margin: -16px 0 0 -16px;
+  position: absolute;
+  top: 48%;
+  left: 50%; }
+
+.lightbox-caption {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  background: #000;
+  background: rgba(0, 0, 0, 0.7); }
+  .lightbox-caption p {
+    margin: 0 auto;
+    max-width: 70%;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 10px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px; }
+
+.lightbox-button {
+  position: absolute;
+  z-index: 9999;
+  background: no-repeat center center;
+  width: 32px;
+  height: 32px;
+  opacity: 0.4;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+  .lightbox-button:hover, .lightbox-button:focus {
+    opacity: 1;
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4); }
+
+.lightbox-close {
+  right: 30px;
+  top: 30px;
+  background-image: url("../images/close.png"); }
+
+.lightbox-next {
+  right: 30px;
+  top: 48%;
+  background-image: url("../images/next.png"); }
+
+.lightbox-previous {
+  left: 30px;
+  top: 48%;
+  background-image: url("../images/previous.png"); }
+
+/***********************************************************************
+ **
+ **  Liquid Slider
+ **  Kevin Batdorf
+ **
+ **  http://liquidslider.com
+ **
+ **  GPL license 
+ **
+ ************************************************************************ */
+/******************************************************
+ ** No JavaScript
+ ** Use this to apply styles when Javascript is disabled,
+ ** and be sure to include the ".no-js" class in your html 
+ ** markup.
+ ******************************************************* */
+.no-js .liquid-slider {
+  overflow: scroll; }
+
+/******************************************************
+ ** Preloader
+ ** Use this to apply styles when Javascript is disabled,
+ ** and be sure to include the ".no-js" class in your html 
+ ** markup.
+ ******************************************************* */
+.ls-preloader {
+  background: url(../images/loading.gif) #f2f2f2 no-repeat center 75px;
+  opacity: 1;
+  /* Do not edit below this line */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+/******************************************************************
+ ** Base Styles 
+ ** The styles here will apply to everything. I recommend you keep
+ ** the styles in here specific to mobile defices, then use
+ ** the media queries at the bottom to define further styles for larger
+ ** screen-sizes. Think Mobile First. But be cautious of how
+ ** your site will look in older IE browsers.
+ **
+ ** Additional media queries are at the bottom of this document
+ ****************************************************************** */
+.ls-wrapper {
+  margin: 0 auto;
+  /* Do not edit below this line */
+  clear: both;
+  overflow: auto;
+  position: relative; }
+  .ls-wrapper .liquid-slider {
+    /* Do not edit below this line */
+    float: left;
+    overflow: hidden;
+    position: relative; }
+  .ls-wrapper .panel-container {
+    /* Do not edit below this line */
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    /* from http://davidwalsh.name/translate3d */ }
+  .ls-wrapper .liquid-slider .panel-container .fade {
+    /* Do not edit below this line */
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block; }
+  .ls-wrapper .liquid-slider .panel {
+    /* Do not edit below this line */
+    display: block;
+    float: left; }
+    .ls-wrapper .liquid-slider .panel img {
+      /*width:100%;
+       *height:auto;  
+       *margin:0 5px; */ }
+    .ls-wrapper .liquid-slider .panel video {
+      /*width:100%;  
+       *height:auto; */ }
+  .ls-wrapper .liquid-slider .panel-wrapper {
+    /* Do not edit below this line */
+    position: relative; }
+  .ls-wrapper .ls-nav a {
+    margin-right: 1px;
+    padding: 10px 15px;
+    outline: 0; }
+    .ls-wrapper .ls-nav a:hover {
+      text-shadow: none; }
+
+/******************************************************
+ ** Main Container
+ ** This is the main container (minus the navigation).
+ ** Be sure to match the width with the .panel class, 
+ ** or it won't work properly. Also, width only applies
+ ** if you are not using the responsive setting.
+ **
+ ** The responsive slider will interpret the width as the
+ ** max width instead
+ ******************************************************* */
+/******************************************************
+ ** Panels
+ ** This is for the panels. If you are using the 
+ ** responsive setting, this will act as the max-width
+ ** for the entire slider.
+ ******************************************************* */
+/******************************************************
+ ** These provide a base starting point for images and
+ ** video. However, you will have to add more rules
+ ** based on the content you use. Use the @media queries 
+ ** at the bottom of this file.
+ ******************************************************* */
+/******************************************************
+ ** This is mainly used to adjust the padding inside each 
+ ** panel. If you are using the responsive setting, you
+ ** need to use the settings below as this will not apply.
+ ******************************************************* */
+/*****************************************************
+ ** This will adjust styles for all navigation tabs
+ ** less of course the select box used for mobile 
+ ** navigation. The .current styles will apply only to 
+ ** the current tab.
+ **
+ ** You may use this section to create navigation for
+ ** mobile devices if you set mobileNavigation: false
+ ** Be sure to edit media queries for larger devices below
+ ** I have included an example below in comments.
+ **
+ ** .currentCrossLink refers to external crosslinking.
+ ******************************************************* */
+.currentCrossLink {
+  font-weight: bold; }
+
+.ls-wrapper .ls-nav {
+  overflow: hidden;
+  clear: both; }
+  .ls-wrapper .ls-nav ul {
+    padding: 0;
+    /* Do not edit below this line */
+    clear: both;
+    display: block;
+    margin: auto;
+    overflow: hidden; }
+    .ls-wrapper .ls-nav ul li {
+      /* Do not edit below this line */
+      display: inline; }
+      .ls-wrapper .ls-nav ul li a {
+        /* Do not edit below this line */
+        display: block;
+        float: left;
+        text-decoration: none; }
+.ls-wrapper .ls-select-box {
+  /* Delete these if you want the standard select box.
+   * Also delete the rules below */
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  background: url(../images/menu.png) no-repeat right #dddddd; }
+  .ls-wrapper .ls-select-box select {
+    /* If you want the standard select box, use
+     *width:100%
+     *And delete the rest of the styling here */
+    width: 150%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    padding: 5px;
+    font-size: 110%;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+    outline: 0; }
+.ls-wrapper .ls-nav-left, .ls-wrapper .ls-nav-right {
+  /* Do not edit below this line */
+  float: left; }
+.ls-wrapper .ls-nav-left a, .ls-wrapper .ls-nav-right a {
+  /* non-graphical arrows */
+  padding: 5px;
+  width: 100px;
+  /* Do not edit below this line */
+  display: block;
+  text-align: center;
+  text-decoration: none; }
+.ls-wrapper .ls-nav-left-arrow, .ls-wrapper .ls-nav-right-arrow {
+  cursor: pointer;
+  /* Do not edit below this line */
+  float: left; }
+.ls-wrapper .ls-nav-left-arrow a, .ls-wrapper .ls-nav-right-arrow a {
+  /* Do not edit below this line */
+  display: block; }
+.ls-wrapper .ls-nav-left, .ls-wrapper .ls-nav-left-arrow {
+  /* Do not edit below this line */
+  clear: both; }
+.ls-wrapper .ls-nav-right-arrow {
+  width: 25px;
+  height: 25px;
+  background: url(../images/arrow.png) no-repeat top right;
+  margin-top: 50px;
+  margin-right: 5px;
+  /* Do not edit below this line */
+  position: relative; }
+.ls-wrapper .ls-nav-left-arrow {
+  width: 25px;
+  height: 25px;
+  background: url(../images/arrow.png) no-repeat top left;
+  margin-top: 50px;
+  margin-left: 5px;
+  /* Do not edit below this line */
+  position: relative; }
+  .ls-wrapper .ls-nav-left-arrow:hover {
+    /* Left graphical arrows hover */
+    background: url(../images/arrow.png) no-repeat bottom left; }
+  .ls-wrapper .ls-nav-left-arrow:active {
+    /* Left graphical arrows click */ }
+.ls-wrapper .ls-nav-right-arrow:hover {
+  /* Right graphical arrows hover */
+  background: url(../images/arrow.png) no-repeat bottom right; }
+.ls-wrapper .ls-nav-right-arrow:active {
+  /* Right graphical arrows click */ }
+
+/*****************************************************
+ ** Mobile Menu
+ ** This will adjust styles for selectbox styles. I have
+ ** included a simple example to create a custom select
+ ** box.
+ ******************************************************* */
+/******************************************************
+ ** Arrows
+ ** This section refers to both the non-graphical and 
+ ** graphical navigation arrows. 
+ **
+ ** Some settings will be overwritten when using the 
+ ** responsive setting.
+ ******************************************************* */
+.arrows .liquid-slider {
+  /* Margin between slider and arrows */
+  margin: 0 10px; }
+
+/******************************************************
+ ** Responsive Styles
+ ** Here are the main responsive styles. This mostly 
+ ** covers the arrows, and most of the settings can be
+ ** applied above.
+ ******************************************************* */
+.ls-responsive .liquid-slider {
+  /* Do not edit below this line */
+  width: 100%;
+  margin: 0; }
+  .ls-responsive .liquid-slider .panel .panel-wrapper {
+    padding: 10px; }
+.ls-responsive .ls-nav-left {
+  /* Left non-graphical arrows */
+  /* Do not edit below this line */
+  position: absolute;
+  left: 0;
+  z-index: 2; }
+  .ls-responsive .ls-nav-left a {
+    /* Left non-graphical arrows */
+    background: #9A9A9A;
+    width: 80px; }
+    .ls-responsive .ls-nav-left a:hover {
+      /* Left non-graphical hover */
+      background: #747474; }
+.ls-responsive .ls-nav-right {
+  /* Right non-graphical arrows */
+  /* Do not edit below this line */
+  position: absolute;
+  right: 0;
+  z-index: 2; }
+  .ls-responsive .ls-nav-right a {
+    /* Right non-graphical arrows */
+    background: #9A9A9A;
+    width: 80px; }
+    .ls-responsive .ls-nav-right a:hover {
+      /* Right non-graphical arrows hover */
+      background: #747474; }
+.ls-responsive .ls-nav-left-arrow {
+  /* Do not edit below this line */
+  position: absolute;
+  left: 0;
+  z-index: 2; }
+.ls-responsive .ls-nav-right-arrow {
+  /* Do not edit below this line */
+  position: absolute;
+  right: 0;
+  z-index: 2; }
+
+/******************************************************************
+ ** Larger Mobile Devices
+ ** This is for devices like the Galaxy Note or something that's 
+ ** larger than an iPhone but smaller than a tablet. 
+ ****************************************************************** */
+@media only screen and (min-width: 481px) {
+  .ls-wrapper .liquid-slider .panel img {
+    /* Example */
+    /*width:24%;
+     *margin:2px; */ } }
+/******************************************************************
+ ** Tablet & Smaller Laptops
+ ** This will include tablets and some netbooks.
+ ****************************************************************** */
+@media only screen and (min-width: 768px) {
+  .ls-wrapper .liquid-slider .panel img {
+    /* Example */
+    /*width:24%; */ }
+
+  .ls-responsive .liquid-slider .panel .panel-wrapper {
+    padding: 20px 35px; } }
+/******************************************************************
+ ** DESKTOP 
+ ** This is the average viewing window. So Desktops, Laptops, and 
+ ** in general anyone not viewing on a mobile device. Here's where
+ ** you can add resource intensive styles.
+ ****************************************************************** */
+/******************************************************************
+ ** LARGE VIEWING SIZE 
+ ** This is for the larger monitors and possibly full screen viewers.
+ ****************************************************************** */
+/******************************************************************
+ ** RETINA (2x RESOLUTION DEVICES)
+ ** This applies to the retina iPhone (4s) and iPad (2,3) along with 
+ ** other displays with a 2x resolution. You can also create a media
+ ** query for retina AND a certain size if you want. Go Nuts.
+ ****************************************************************** */
+
+/*# sourceMappingURL=main.css.map */
