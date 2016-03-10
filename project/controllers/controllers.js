@@ -3,7 +3,7 @@
 var roomControllers = angular.module('roomControllers', []);
 
 //detail controller utilities table
-roomControllers.controller('list_DetailutilitiesCtrl', ['$scope', 'RoomServices', 'detail_room_utilitiesProvider' function ($scope) {
+roomControllers.controller('list_DetailutilitiesCtrl', ['$scope', 'RoomServices', 'detail_room_utilitiesProvider',
 	function($scope, RoomServices, detail_room_utilitiesProvider){
 		$scope.detailsutilities = RoomServices.getRooms();
 
@@ -11,12 +11,10 @@ roomControllers.controller('list_DetailutilitiesCtrl', ['$scope', 'RoomServices'
 			$scope.newRoom = angular.copy({});
 			$scope.show = false;
 		};
-
-	};
 }]);
 
 //detail controller relax table
-roomControllers.controller('list_DetailrelaxCtrl', ['$scope', 'RoomServices', 'detail_room_relaxProvider' function ($scope) {
+roomControllers.controller('list_DetailrelaxCtrl', ['$scope', 'RoomServices', 'detail_room_relaxProvider',
 	function($scope, RoomServices, detail_room_relaxProvider){
 		$scope.detailsrelax = RoomServices.getRooms();
 
@@ -24,6 +22,4 @@ roomControllers.controller('list_DetailrelaxCtrl', ['$scope', 'RoomServices', 'd
 			$scope.newRoom = angular.copy({});
 			$scope.show = false;
 		};
-
-	};
 }]);
